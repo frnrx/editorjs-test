@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "draft-js": "^0.11.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
@@ -27,5 +28,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "@editorjs/editorjs": "^2.15.0",
+    "@editorjs/header": "^2.3.0",
+    "@editorjs/image": "^2.3.1",
+    "@editorjs/link": "^2.1.3",
+    "@editorjs/list": "^1.4.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

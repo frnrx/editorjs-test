@@ -5,6 +5,7 @@ import Header from '@editorjs/header';
 import LinkTool from '@editorjs/link';
 import List from '@editorjs/list';
 import ImageTool from '@editorjs/image';
+
 class App extends Component {
 
   saveData = (editor) => {
@@ -14,7 +15,6 @@ class App extends Component {
       console.log('Saving failed: ', error)
     });
   }
-
   render() {
 
     const editor = new EditorJS({
@@ -56,14 +56,16 @@ class App extends Component {
         console.log(`Editor.js initialization failed because of ${reason}`)
       });
 
+    console.log(editor)
+
     return (
-      <div className="container" >
+      <>
         <div className="test-editor" id='test-editor'></div>
-        <button onClick={this.saveData}>SAVE!</button>
-      </div >
+        <button onClick={() => this.saveData(editor)}>SAVE!</button>
+      </>
     );
   }
-}
 
+}
 
 export default App;
